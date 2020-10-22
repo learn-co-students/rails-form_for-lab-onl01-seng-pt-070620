@@ -1,0 +1,6 @@
+<%= content_tag :h1, "School Class Form" %>
+<%= form_for @class do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_field :room_number %>
+  <%= f.submit %>
+<% end %>
