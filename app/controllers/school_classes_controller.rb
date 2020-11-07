@@ -14,7 +14,7 @@ class SchoolClassesController < ApplicationController
         # @school_class.title = params[:title]
         # @school_class.room_number = params[:room_number]
         # @school_class.save
-        Student.create(params.require(:school_class).permit(:title, :room_number))
+        SchoolClass.create(params.require(:school_class).permit(:title, :room_number))
         redirect_to school_classes_path(@school_class)
     end 
 
