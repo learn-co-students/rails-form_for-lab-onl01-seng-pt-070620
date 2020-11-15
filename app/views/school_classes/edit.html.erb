@@ -1,0 +1,13 @@
+<h1>Update School Class</h1>
+
+<%=form_for(@school_class) do |f|%>
+
+<%=f.label 'Title'%><br>
+<%= f.text_field :title%><br>
+
+<%=f.label 'Room Number'%><br>
+<%= f.text_field :room_number%><br>
+
+<%=f.label 'Update School class'%><br>
+<%=f.submit "Update School class"%>
+<% end %>
